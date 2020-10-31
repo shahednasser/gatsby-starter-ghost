@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "https://shahednasserblog.herokuapp.com",
+    "contentApiKey": "15342b323f805f4bfb81d46cdb"
   },
   "production": {
-    "apiUrl": "https://gatsby.ghost.io",
-    "contentApiKey": "9cc5c67c358edfdd81455149d0"
+    "apiUrl": "https://shahednasserblog.herokuapp.com",
+    "contentApiKey": "15342b323f805f4bfb81d46cdb"
   }
 }
