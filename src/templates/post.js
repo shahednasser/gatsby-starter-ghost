@@ -41,6 +41,7 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
+                        <div id="disqus_thread"></div>
                     </article>
                 </div>
             </Layout>
