@@ -27,6 +27,14 @@ const Post = ({ data, location }) => {
         (d.head || d.body).appendChild(s);
         })();
         
+        //add share this script
+        (function() {
+        var d = document, ts = d.createElement('script');
+        ts.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=5fa59a268fbbd6001256e36a&product=inline-share-buttons';
+        ts.setAttribute('async', 'async');
+        (d.head || d.body).appendChild(ts);
+        })();
+        
         return () => {
             document.body.removeChild(s);
         }
@@ -41,7 +49,6 @@ const Post = ({ data, location }) => {
             />
             <Helmet>
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
-                <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fa59a268fbbd6001256e36a&product=inline-share-buttons" async="async"></script>
             </Helmet>
             <Layout>
                 <div className="container">
@@ -59,6 +66,7 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
+                        <div class="sharethis-inline-share-buttons"></div>
                         <div id="disqus_thread"></div>
                     </article>
                 </div>
