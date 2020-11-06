@@ -37,6 +37,7 @@ const Post = ({ data, location }) => {
         
         return () => {
             document.body.removeChild(s);
+            document.body.removeChild(ts);
         }
     }, []);
 
@@ -66,7 +67,7 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <div class="sharethis-inline-share-buttons"></div>
+                        <div className="sharethis-inline-share-buttons"></div>
                         <div id="disqus_thread"></div>
                     </article>
                 </div>
