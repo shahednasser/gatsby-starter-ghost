@@ -668,6 +668,7 @@ h6 {
     background: var(--color-base);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .site-nav-item {
