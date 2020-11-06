@@ -19,8 +19,6 @@ what's here to work the way you'd like it to.
 /* Variables
 /* ---------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
 :root {
 
     /* Colours */
@@ -659,6 +657,10 @@ h6 {
     background: var(--color-base);
     color: #fff;
     border-radius: 12px;
+}
+
+#disqus_thread {
+    margin-top: 1.5em;
 }
 
 /* Header
