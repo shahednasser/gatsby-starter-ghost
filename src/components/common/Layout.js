@@ -84,7 +84,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 </div>
             </div>
-
+            <div
+                className="foot-script"
+                dangerouslySetInnerHTML={{ __html: site.codeinjection_foot }}
+            />
         </>
     )
 }
