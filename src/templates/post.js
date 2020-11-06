@@ -31,7 +31,6 @@ const Post = ({ data, location }) => {
         (function() {
         var d = document, ts = d.createElement('script');
         ts.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=5fa59a268fbbd6001256e36a&product=inline-share-buttons';
-        ts.setAttribute('async', 'async');
         (d.head || d.body).appendChild(ts);
         })();
         
