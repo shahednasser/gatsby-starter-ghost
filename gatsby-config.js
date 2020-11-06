@@ -36,6 +36,8 @@ if (process.env.NODE_ENV === `production` && config.siteUrl === `http://localhos
 module.exports = {
     siteMetadata: {
         siteUrl: process.env.SITEURL || config.siteUrl,
+        title: 'Shahed Nasser\'s Blog',
+        description: 'Tutorials and Posts about Programming'
     },
     plugins: [
         /**
