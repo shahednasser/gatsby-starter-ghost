@@ -20,20 +20,17 @@ const Post = ({ data, location }) => {
             this.page.url = window.location.href;  
             this.page.identifier = "ghost-" + post.id
         };
-        (function() {
-        const d = document, s = d.createElement('script');
+        const d = document,
+              s = d.createElement('script'),
+              ts = d.createElement('script');
+        
         s.src = 'https://shaheds-blog.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
-        })();
         
-        //add share this script
-        (function() {
-        const d = document, s = d.createElement('script');
-        s.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=5fa59a268fbbd6001256e36a&product=inline-share-buttons';
-        s.setAttribute('async', 'async');
-        (d.head || d.body).appendChild(s);
-        })();
+        ts.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=5fa59a268fbbd6001256e36a&product=inline-share-buttons';
+        ts.setAttribute('async', 'async');
+        (d.head || d.body).appendChild(ts);
         
         return () => {
             document.body.removeChild(s);
