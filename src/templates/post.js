@@ -41,6 +41,7 @@ const Post = ({ data, location }) => {
             />
             <Helmet>
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
+                <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fa59a268fbbd6001256e36a&product=inline-share-buttons" async="async"></script>
             </Helmet>
             <Layout>
                 <div className="container">
