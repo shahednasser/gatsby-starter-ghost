@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
@@ -14,6 +14,23 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
+    
+    useEffect(() => {
+        const disqus_config = function () {
+            this.page.url = window.location.href;  
+            this.page.identifier = "ghost-" + post.id
+        };
+        (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://shaheds-blog.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        
+        return () => {
+            document.body.removeChild(s);
+        }
+    }, []);
 
     return (
         <>
