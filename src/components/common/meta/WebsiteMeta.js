@@ -46,6 +46,14 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
         },
         description,
     }
+    
+    useEffect(() => {
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-H6S34880Z9');
+    }, []);
 
     return (
         <>
@@ -64,15 +72,8 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
-                <script data-ad-client="ca-pub-2363112675177259" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6S34880Z9"></script>
-                <script>
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-
-                  gtag('config', 'G-H6S34880Z9');
-                </script>
+                <script data-ad-client="ca-pub-2363112675177259" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <script src="https://www.googletagmanager.com/gtag/js?id=G-H6S34880Z9"></script>
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
