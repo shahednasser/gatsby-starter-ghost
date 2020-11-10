@@ -64,6 +64,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
+                {`${settings.allGhostSettings.codeinjection_head}`}
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
