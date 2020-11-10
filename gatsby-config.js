@@ -185,6 +185,39 @@ module.exports = {
                 addUncaughtPages: true,
             },
         },
+        {
+            resolve: `gatsby-plugin-google-adsense`,
+            options: {
+                publisherId: `ca-pub-2363112675177259`
+            },
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                // The property ID; the tracking code won't be generated without it
+                trackingId: "G-H6S34880Z9",
+                // Defines where to place the tracking script - `true` in the head and `false` in the body
+                head: false,
+                // Setting this parameter is optional
+                anonymize: true,
+                // Setting this parameter is also optional
+                respectDNT: true,
+                // Avoids sending pageview hits from custom paths
+                exclude: ["/preview/**", "/do-not-track/me/too/"],
+                // Delays sending pageview hits on route update (in milliseconds)
+                pageTransitionDelay: 0,
+                // Defers execution of google analytics script after page load
+                defer: true
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-web-font-loader',
+            options: {
+                google: {
+                families: ['Montserrat:300,400,500,700']
+                }
+            }
+        }
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
