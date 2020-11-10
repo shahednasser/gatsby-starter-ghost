@@ -8,8 +8,6 @@ import url from 'url'
 import ImageMeta from './ImageMeta'
 import config from '../../../utils/siteConfig'
 
-const parse = require('html-react-parser');
-
 const WebsiteMeta = ({ data, settings, canonical, title, description, image, type }) => {
     settings = settings.allGhostSettings.edges[0].node
 
@@ -66,7 +64,6 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
-                {parse(settings.codeinjection_head)}
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
