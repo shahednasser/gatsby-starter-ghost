@@ -9,7 +9,6 @@ import ImageMeta from './ImageMeta'
 import config from '../../../utils/siteConfig'
 
 const WebsiteMeta = ({ data, settings, canonical, title, description, image, type }) => {
-    console.log(settings);
     settings = settings.allGhostSettings.edges[0].node
 
     const publisherLogo = url.resolve(config.siteUrl, (settings.logo || config.siteIcon))
@@ -65,6 +64,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 {settings.twitter && <meta name="twitter:site" content={`https://twitter.com/${settings.twitter.replace(/^@/, ``)}/`} />}
                 {settings.twitter && <meta name="twitter:creator" content={settings.twitter} />}
                 <script type="application/ld+json">{JSON.stringify(jsonLd, undefined, 4)}</script>
+                {settings.codeinjection_head}
             </Helmet>
             <ImageMeta image={shareImage} />
         </>
