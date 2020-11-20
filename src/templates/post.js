@@ -109,6 +109,7 @@ const Post = ({ data, location }) => {
                             </div>
                           </div>
                         </div>
+                        <img src="https://track.mailerlite.com/webforms/o/3059009/t8p8l2?v1605861657" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
                         <div className="sharethis-inline-share-buttons"></div>
                         <div id="disqus_thread"></div>
                     </article>
