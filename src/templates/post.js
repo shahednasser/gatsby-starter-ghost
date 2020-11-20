@@ -68,7 +68,7 @@ const Post = ({ data, location }) => {
                           <div className="ml-form-align-center">
                             <div className="ml-form-embedWrapper embedForm">
                               <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
-                                <div className="ml-form-embedContent" style="">
+                                <div className="ml-form-embedContent">
                                   <h4>Subscribe to Newsletter</h4>
                                   <p>Subscribe to the newsletter to be notified of new tutorials and articles!</p>
                                 </div>
@@ -84,11 +84,11 @@ const Post = ({ data, location }) => {
                                       </div>
                                       <div className="ml-button-horizontal primary">
                                         <button type="submit" className="primary">Subscribe</button>
-                                        <button disabled="disabled" style="display:none" type="button" className="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
+                                        <button disabled="disabled" style={{display: "none"}} type="button" className="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="ml-form-embedPermissions" style="">
+                                  <div className="ml-form-embedPermissions">
                                     <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
                                       <p>You can unsubscribe anytime.</p>
                                     </div>
@@ -96,11 +96,11 @@ const Post = ({ data, location }) => {
                                   <input type="hidden" name="ml-submit" value="1">
                                   <div className="ml-mobileButton-horizontal">
                                     <button type="submit" className="primary">Subscribe</button>
-                                    <button disabled="disabled" style="display:none" type="button" class="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
+                                    <button disabled="disabled" style={{display: "none"}} type="button" class="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
                                   </div>
                                 </form>
                               </div>
-                              <div className="ml-form-successBody row-success" style="display:none">
+                              <div className="ml-form-successBody row-success" style={{display: "none"}}>
                                 <div className="ml-form-successContent">
                                   <h4>Thank you!</h4>
                                   <p>You have successfully joined our subscriber list.</p>
@@ -109,7 +109,7 @@ const Post = ({ data, location }) => {
                             </div>
                           </div>
                         </div>
-                        <img src="https://track.mailerlite.com/webforms/o/3059009/t8p8l2?v1605861657" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+                        <img src="https://track.mailerlite.com/webforms/o/3059009/t8p8l2?v1605861657" className="ml-track-image" alt=".">
                         <div className="sharethis-inline-share-buttons"></div>
                         <div id="disqus_thread"></div>
                     </article>
