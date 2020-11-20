@@ -14,24 +14,24 @@ import { MetaData } from '../components/common/meta'
 */
 const Post = ({ data, location }) => {
     const post = data.ghostPost
-    
+
     useEffect(() => {
         const disqus_config = function () {
-            this.page.url = window.location.href;  
+            this.page.url = window.location.href;
             this.page.identifier = "ghost-" + post.id
         };
         const d = document,
               s = d.createElement('script'),
               ts = d.createElement('script');
-        
+
         s.src = 'https://shaheds-blog.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
-        
+
         ts.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=5fa59a268fbbd6001256e36a&product=inline-share-buttons';
         ts.setAttribute('async', 'async');
         (d.head || d.body).appendChild(ts);
-        
+
         return () => {
             document.body.removeChild(s);
             document.body.removeChild(ts);
@@ -79,7 +79,7 @@ const Post = ({ data, location }) => {
                                       <div className="ml-input-horizontal">
                                         <div style="width:100%" className="horizontal-fields">
                                           <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                            <input type="email" className="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                                            <input type="email" className="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" />
                                           </div>
                                         </div>
                                       </div>
@@ -94,7 +94,7 @@ const Post = ({ data, location }) => {
                                       <p>You can unsubscribe anytime.</p>
                                     </div>
                                   </div>
-                                  <input type="hidden" name="ml-submit" value="1">
+                                  <input type="hidden" name="ml-submit" value="1" />
                                   <div className="ml-mobileButton-horizontal">
                                     <button type="submit" className="primary">Subscribe</button>
                                     <button disabled="disabled" style={{display: "none"}} type="button" class="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
