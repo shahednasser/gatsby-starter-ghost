@@ -64,7 +64,6 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <div className="sharethis-inline-share-buttons"></div>
                         <div id="mlb2-3059009" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-3059009">
                           <div className="ml-form-align-center">
                             <div className="ml-form-embedWrapper embedForm">
@@ -110,6 +109,7 @@ const Post = ({ data, location }) => {
                             </div>
                           </div>
                         </div>
+                        <div className="sharethis-inline-share-buttons mt-4"></div>
                         <div id="disqus_thread"></div>
                     </article>
                 </div>
