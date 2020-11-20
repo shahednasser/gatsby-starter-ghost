@@ -77,7 +77,7 @@ const Post = ({ data, location }) => {
                                   <div className="ml-form-formContent horozintalForm">
                                     <div className="ml-form-horizontalRow">
                                       <div className="ml-input-horizontal">
-                                        <div style="width:100%" className="horizontal-fields">
+                                        <div style={{width: "100%"}} className="horizontal-fields">
                                           <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
                                             <input type="email" className="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" />
                                           </div>
