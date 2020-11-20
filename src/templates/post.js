@@ -65,6 +65,51 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                         <div className="sharethis-inline-share-buttons"></div>
+                        <div id="mlb2-3059009" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-3059009">
+                          <div className="ml-form-align-center">
+                            <div className="ml-form-embedWrapper embedForm">
+                              <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
+                                <div className="ml-form-embedContent">
+                                  <h4>Subscribe to Newsletter</h4>
+                                  <p>Subscribe to the newsletter to be notified of new tutorials and articles!</p>
+                                </div>
+                                <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/t8p8l2" data-code="t8p8l2" method="post" target="_blank">
+                                  <div className="ml-form-formContent horozintalForm">
+                                    <div className="ml-form-horizontalRow">
+                                      <div className="ml-input-horizontal">
+                                        <div style="width:100%" className="horizontal-fields">
+                                          <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                            <input type="email" className="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div className="ml-button-horizontal primary">
+                                        <button type="submit" className="primary">Subscribe</button>
+                                        <button disabled="disabled" style={{display: "none"}} type="button" className="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="ml-form-embedPermissions">
+                                    <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
+                                      <p>You can unsubscribe anytime.</p>
+                                    </div>
+                                  </div>
+                                  <input type="hidden" name="ml-submit" value="1">
+                                  <div className="ml-mobileButton-horizontal">
+                                    <button type="submit" className="primary">Subscribe</button>
+                                    <button disabled="disabled" style={{display: "none"}} type="button" class="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
+                                  </div>
+                                </form>
+                              </div>
+                              <div className="ml-form-successBody row-success" style={{display: "none"}}>
+                                <div className="ml-form-successContent">
+                                  <h4>Thank you!</h4>
+                                  <p>You have successfully joined our subscriber list.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <div id="disqus_thread"></div>
                     </article>
                 </div>
