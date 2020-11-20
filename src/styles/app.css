@@ -1750,3 +1750,170 @@ h6 {
         padding-top:0!important
     }
 }
+.ml-mobileButton-horizontal{
+    display:none
+}
+#mlb2-3059009 .ml-mobileButton-horizontal button{
+    background-color:#000!important;
+    border-color:#000!important;
+    border-style:solid!important;
+    border-width:1px!important;
+    border-radius:4px!important;
+    box-shadow:none!important;
+    color:#fff!important;
+    cursor:pointer;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif!important;
+    font-size:14px!important;
+    font-weight:700!important;
+    line-height:20px!important;
+    padding:10px!important;
+    width:100%!important
+}
+@media only screen and (max-width:400px){
+    #mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm{
+        padding:0 0 10px 0!important
+    }
+    .ml-hide-horizontal{
+        display:none!important
+    }
+    .ml-form-formContent.horozintalForm .ml-button-horizontal{
+        display:none!important
+    }
+    .ml-mobileButton-horizontal{
+        display:block!important;
+        margin-bottom:20px
+    }
+    .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal>div{
+        padding-bottom:0!important
+    }
+}
+@media only screen and (max-width:400px){
+    .ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields{
+        margin-bottom:10px!important;
+        width:100%!important
+    }
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions{
+    text-align:left;
+    float:left;
+    width:100%
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent{
+    margin:0 0 15px 0;
+    text-align:left
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.horizontal{
+    margin:0 0 15px 0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent h4{
+    color:#000;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight:700;
+    line-height:18px;
+    margin:0 0 10px 0;
+    word-break:break-word
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p{
+    color:#000;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-size:12px;
+    line-height:18px;
+    margin:0 0 10px 0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p{
+    color:#000;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-size:12px;
+    line-height:22px;
+    margin:0 0 10px 0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p a{
+    color:#000
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p:last-child{
+    margin:0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p a{
+    color:#000;
+    text-decoration:underline
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p:last-child{
+    margin:0 0 15px 0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptions{
+    margin:0;
+    padding:0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox{
+    margin:0 0 10px 0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox:last-child{
+    margin:0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox label{
+    font-weight:400;
+    margin:0;
+    padding:0;
+    position:relative;
+    display:block;
+    min-height:24px;
+    padding-left:24px
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .label-description{
+    color:#000;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-size:12px;
+    line-height:18px;
+    text-align:left;
+    margin-bottom:0;
+    position:relative;
+    vertical-align:top;
+    font-style:normal;
+    font-weight:700
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox .description{
+    color:#000;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-style:italic;
+    font-weight:400;
+    line-height:18px;
+    margin:5px 0 0 0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsOptionsCheckbox input[type=checkbox]{
+    box-sizing:border-box;
+    padding:0;
+    position:absolute;
+    z-index:-1;
+    opacity:0;
+    margin-top:5px;
+    margin-left:-24px;
+    overflow:visible
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR{
+    padding-bottom:20px
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p{
+    color:#000;
+    font-family:'Open Sans',Arial,Helvetica,sans-serif;
+    font-size:10px;
+    line-height:14px;
+    margin:0;
+    padding:0
+}
+#mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p a{
+    color:#000;
+    text-decoration:underline
+}
+@media (max-width:768px){
+    #mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent p{
+        font-size:12px!important;
+        line-height:18px!important
+    }
+    #mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedMailerLite-GDPR p{
+        font-size:10px!important;
+        line-height:14px!important
+    }
+}
+
