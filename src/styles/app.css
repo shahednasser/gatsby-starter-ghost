@@ -1249,8 +1249,9 @@ h6 {
     width:400px
 }
 #mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper.embedForm{
-    max-width:400px;
-    width:100%
+    max-width:720px;
+    width:100%;
+    margin-bottom: 20px;
 }
 #mlb2-3059009.ml-form-embedContainer .ml-form-align-left{
     text-align:left
