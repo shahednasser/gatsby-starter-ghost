@@ -161,20 +161,6 @@ module.exports = {
                         }
                     }
                 }`,
-                mapping: {
-                    allGhostPost: {
-                        sitemap: `posts`,
-                    },
-                    allGhostTag: {
-                        sitemap: `tags`,
-                    },
-                    allGhostAuthor: {
-                        sitemap: `authors`,
-                    },
-                    allGhostPage: {
-                        sitemap: `pages`,
-                    },
-                },
                 exclude: [
                     `/dev-404-page`,
                     `/404`,
@@ -182,7 +168,6 @@ module.exports = {
                     `/offline-plugin-app-shell-fallback`,
                 ],
                 createLinkInHead: true,
-                addUncaughtPages: true,
             },
         },
         {
