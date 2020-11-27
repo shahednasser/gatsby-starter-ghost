@@ -51,12 +51,12 @@ const Post = ({ data, location }) => {
             <Layout>
                 <div className="container">
                     <article className="content">
+                        <h1 className="content-title">{post.title}</h1>
                         { post.feature_image ?
                             <figure className="post-feature-image">
                                 <img src={ post.feature_image } alt={ post.title } />
                             </figure> : null }
                         <section className="post-full-content">
-                            <h1 className="content-title">{post.title}</h1>
 
                             {/* The main post content */ }
                             <section
