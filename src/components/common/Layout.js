@@ -45,6 +45,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
                                     <a className="site-nav-item" href="https://instagram.com/shahednasser95" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/instagram.svg" alt="Instagram" /></a>
                                     <a className="site-nav-item" href="https://github.com/shahednasser" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/github.svg" alt="Github" /></a>
+                                    <a className="site-nav-item" href="mailto:shahednasser@gmail.com" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/mail.svg" alt="Email" /></a>
                                 </div>
                             </div>
                             { isHome ?
