@@ -52,7 +52,7 @@ const Post = ({ data, location }) => {
                 <div className="container">
                     <article className="content">
                         <h1 className="content-title">{post.title}</h1>
-                        <small className="post-date">{post.published_at_pretty}</small>
+                        <small className="post-date">Posted on {post.published_at_pretty}</small>
                         { post.feature_image ?
                             <figure className="post-feature-image">
                                 <img src={ post.feature_image } alt={ post.title } />

@@ -582,9 +582,16 @@ h6 {
 }
 
 .content-title {
-    margin: 0 0 0.8em;
+    margin: 0;
     font-size: 5rem;
 }
+
+.post-date {
+    margin: 10px 0 5px;
+    color: #909090;
+    display: block;
+}
+
 @media (max-width: 500px) {
     .content-title {
         margin: 0.8em 0;
