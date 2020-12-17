@@ -6,7 +6,7 @@ import { Layout } from '../components/common'
 const NotFoundPage = () => (
     <Layout>
         <Helmet>
-            <title>Not Found</title>
+            <title>404 - Not Found</title>
         </Helmet>
         <div className="container">
             <article className="content" style={{ textAlign: `center` }}>

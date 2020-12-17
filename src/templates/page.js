@@ -28,8 +28,11 @@ const Page = ({ data, location }) => {
             <Layout>
                 <div className="container">
                     <article className="content">
-                        <h1 className="content-title">{page.title}</h1>
-
+                        <h1 className="content-title" style={{marginBottom: '0.8em'}}>{page.title}</h1>
+                        { page.feature_image ?
+                            <figure className="post-feature-image">
+                                <img src={ page.feature_image } alt={ page.title } />
+                            </figure> : null }
                         {/* The main page content */}
                         <section
                             className="content-body load-external-scripts"
