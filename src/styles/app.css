@@ -549,7 +549,7 @@ h6 {
 }
 
 .post-full-content {
-    max-width: 720px;
+    /* max-width: 720px; */
     margin: 0 auto;
     background: #fff;
 }
@@ -660,6 +660,11 @@ h6 {
     font-weight: 700;
 }
 
+.content-body figure img {
+    margin: 0 auto;
+    display: block;
+}
+
 .content-body pre {
     margin: 0.4em 0 1.8em;
     font-size: 1.6rem;
@@ -673,6 +678,10 @@ h6 {
 
 #disqus_thread {
     margin-top: 1.5em;
+}
+
+.suggested-read {
+    margin-bottom: 15px;
 }
 
 /* Header
