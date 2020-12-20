@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
@@ -23,15 +23,34 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
 
+    const htmlStrToReactComponent = str => {
+        const dom = new DOMParser().parseFromString(str, 'text/html')
+
+        const el = dom.documentElement.querySelector(':not(html):not(head):not(body)')
+
+        const NodeName = el.nodeName.toLowerCase()
+
+        const attributes = Object.fromEntries([...el.attributes]
+            .map(({ name, value }) => [name, value]))
+
+        return <NodeName {...attributes} />
+    }
+
+    const scriptEl = htmlStrToReactComponent(site.codeinjection_head)
+
+    useEffect(function() {
+        const adElm = document.querySelector('[data-ad-client]');
+        if (adElm && adElm.getAttribute('data-react-helmet')) {
+            adElm.removeAttribute('data-react-helmet');
+        }
+    }, []);
+
     return (
         <>
             <Helmet>
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
-                <div
-                    className="head-script"
-                    dangerouslySetInnerHTML={{ __html: site.codeinjection_head }}
-                />
+                {scriptEl}
                 <body className={bodyClass} />
             </Helmet>
 

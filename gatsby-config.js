@@ -143,6 +143,7 @@ module.exports = {
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
         'gatsby-plugin-sitemap',
-        'gatsby-plugin-robots-txt'
+        'gatsby-plugin-robots-txt',
+        'gatsby-plugin-netlify-cache'
     ],
 }
