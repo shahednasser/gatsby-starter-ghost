@@ -10,6 +10,7 @@ import config from '../../utils/siteConfig'
 // Styles
 import '../../styles/app.css'
 
+
 /**
 * Main layout component
 *
@@ -23,21 +24,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
 
-    const htmlStrToReactComponent = str => {
-        const dom = new DOMParser().parseFromString(str, 'text/html')
-
-        const el = dom.documentElement.querySelector(':not(html):not(head):not(body)')
-
-        const NodeName = el.nodeName.toLowerCase()
-
-        const attributes = Object.fromEntries([...el.attributes]
-            .map(({ name, value }) => [name, value]))
-
-        return <NodeName {...attributes} />
-    }
-
-    const scriptEl = htmlStrToReactComponent(site.codeinjection_head)
-
     useEffect(function() {
         const adElm = document.querySelector('[data-ad-client]');
         if (adElm && adElm.getAttribute('data-react-helmet')) {
@@ -50,7 +36,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <Helmet>
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
-                {scriptEl}
+                <script data-ad-client="ca-pub-2363112675177259" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <body className={bodyClass} />
             </Helmet>
 
