@@ -1065,6 +1065,12 @@ h6 {
     padding-right: 0;
 }
 
+@media screen and (max-width: 767px) {
+    .site-foot-nav {
+        flex-direction: column-reverse;
+    }
+}
+
 
 /* Koenig Styles
 /* ---------------------------------------------------------- */

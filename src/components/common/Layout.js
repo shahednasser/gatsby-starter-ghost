@@ -28,6 +28,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <Helmet>
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
+                <div
+                    className="head-script"
+                    dangerouslySetInnerHTML={{ __html: site.codeinjection_head }}
+                />
                 <body className={bodyClass} />
             </Helmet>
 
