@@ -164,6 +164,7 @@ module.exports = {
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
         'gatsby-plugin-sitemap',
-        'gatsby-plugin-netlify-cache'
+        'gatsby-plugin-netlify-cache',
+        'gatsby-plugin-preload-fonts'
     ],
 }
