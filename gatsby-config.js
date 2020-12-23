@@ -138,12 +138,32 @@ module.exports = {
                 }
             }
         },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                resolveEnv: () => process.env,
+                env: {
+                    production: {
+                        policy: [{ userAgent: '*' }],
+                    },
+                    'branch-deploy': {
+                        policy: [{ userAgent: '*', disallow: ['/'] }],
+                        sitemap: null,
+                        host: null,
+                    },
+                    'deploy-preview': {
+                        policy: [{ userAgent: '*', disallow: ['/'] }],
+                        sitemap: null,
+                        host: null,
+                    },
+                },
+            },
+        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
         'gatsby-plugin-sitemap',
-        'gatsby-plugin-robots-txt',
         'gatsby-plugin-netlify-cache'
     ],
 }
