@@ -24,19 +24,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
 
-    useEffect(function() {
-        const adElm = document.querySelector('[data-ad-client]');
-        if (adElm && adElm.getAttribute('data-react-helmet')) {
-            adElm.removeAttribute('data-react-helmet');
-        }
-    }, []);
-
     return (
         <>
             <Helmet>
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
-                <script data-ad-client="ca-pub-2363112675177259" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <body className={bodyClass} />
             </Helmet>
 

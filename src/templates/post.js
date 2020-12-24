@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 /**
 * Single post view (/:slug)
@@ -55,7 +56,7 @@ const Post = ({ data, location }) => {
                         <small className="post-date">Posted on {post.published_at_pretty}</small>
                         { post.feature_image ?
                             <figure className="post-feature-image">
-                                <img src={ post.feature_image } alt={ post.title } />
+                                <LazyLoadImage src={ post.feature_image } alt={ post.title } effect="blur" />
                             </figure> : null }
                         <section className="post-full-content">
 
@@ -79,7 +80,7 @@ const Post = ({ data, location }) => {
                                       <div className="ml-input-horizontal">
                                         <div style={{width: "100%"}} className="horizontal-fields">
                                           <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                            <input type="email" className="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" />
+                                            <input type="email" className="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autoComplete="email" />
                                           </div>
                                         </div>
                                       </div>
@@ -97,7 +98,7 @@ const Post = ({ data, location }) => {
                                   <input type="hidden" name="ml-submit" value="1" />
                                   <div className="ml-mobileButton-horizontal">
                                     <button type="submit" className="primary">Subscribe</button>
-                                    <button disabled="disabled" style={{display: "none"}} type="button" class="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
+                                    <button disabled="disabled" style={{display: "none"}} type="button" className="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
                                   </div>
                                 </form>
                               </div>
