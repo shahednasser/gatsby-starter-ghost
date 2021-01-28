@@ -159,12 +159,6 @@ module.exports = {
                 },
             },
         },
-        {
-            resolve: `gatsby-plugin-google-adsense`,
-            options: {
-                publisherId: `ca-pub-2363112675177259`
-            },
-        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
