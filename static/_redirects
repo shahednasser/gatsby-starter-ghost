@@ -4,4 +4,5 @@
 https://gatsby-starter-ghost.netlify.com/*      https://gatsby.ghost.org/:splat         301!
 http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat         301!
 
-/*                                              https://blog.shahednasser.com/:splat    301!
+https://shahednasserblog.tk/*                                              https://blog.shahednasser.com/:splat    301!
+https://www.shahednasserblog.tk/*                                          https://www.blog.shahednasser.com/:splat    301!
