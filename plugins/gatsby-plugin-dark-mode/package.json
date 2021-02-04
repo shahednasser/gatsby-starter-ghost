@@ -1,0 +1,35 @@
+{
+  "name": "gatsby-plugin-dark-mode",
+  "version": "1.1.2",
+  "description": "A Gatsby plugin which handles some of the details of implementing a dark mode theme",
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "theming",
+    "dark-mode"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src --out-dir ."
+  },
+  "dependencies": {
+    "prop-types": "^15.5.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "babel-preset-gatsby-package": "^0.4.1",
+    "cross-env": "^7.0.2",
+    "react": "^16.13.1"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
+  "homepage": "https://github.com/insin/gatsby-plugin-dark-mode#readme",
+  "bugs": "https://github.com//insin/gatsby-plugin-dark-mode/issues",
+  "license": "MIT"
+}
