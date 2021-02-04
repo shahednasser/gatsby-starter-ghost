@@ -24,6 +24,25 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
 
+    useEffect(() => {
+        const d = document,
+              s = d.createElement('script'),
+              previous = d.getElementById('carbonads');
+
+        if (previous) {
+            d.body.removeChild(previous)
+        }
+
+        s.src = 'https://cdn.carbonads.com/carbon.js?serve=CEBIL27J&placement=blogshahednassercom';
+        s.id = '_carbonads_js';
+        s.setAttribute('async', 'async');
+        d.body.appendChild(s);
+
+        return () => {
+            d.body.removeChild(s);
+        }
+    }, []);
+
     return (
         <>
             <Helmet>
