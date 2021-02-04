@@ -1979,3 +1979,34 @@ h6 {
         background-color: #15171A;
     }
 }
+
+    /** define variables **/
+    [data-theme="dark"] {
+        --dm-bg-color: #263238;
+        --color-base: #e5eff5;
+        --color-secondary: #8ca7ad;
+        --code-bg: #626f77;
+    }
+    /** end define variables **/
+    [data-theme="dark"] .site-main, [data-theme="dark"] .post-full-content {
+        background-color: var(--dm-bg-color);
+        color: var(--color-base);
+    }
+
+    [data-theme="dark"] .content-body pre {
+        background-color: var(--code-bg);
+    }
+
+    [data-theme="dark"] #mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper {
+        background-color: var(--color-base);
+    }
+
+    [data-theme="dark"] .post-date,
+    [data-theme="dark"] .pagination a,
+    [data-theme="dark"] .tag-header p {
+        color: var(--color-base);
+    }
+
+    [data-theme="dark"] .site-foot {
+        background-color: #15171A;
+    }
