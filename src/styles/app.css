@@ -1946,3 +1946,36 @@ h6 {
     display:block;
 }
 
+/** DARK MODE SUPPORT **/
+@media screen and (prefers-color-scheme: light) {
+    /** define variables **/
+    :root {
+        --dm-bg-color: #263238;
+        --color-base: #e5eff5;
+        --color-secondary: #8ca7ad;
+        --code-bg: #626f77;
+    }
+    /** end define variables **/
+    .site-main, .post-full-content {
+        background-color: var(--dm-bg-color);
+        color: var(--color-base);
+    }
+
+    .content-body pre {
+        background-color: var(--code-bg);
+    }
+
+    #mlb2-3059009.ml-form-embedContainer .ml-form-embedWrapper {
+        background-color: var(--color-base);
+    }
+
+    .post-date,
+    .pagination a,
+    .tag-header p {
+        color: var(--color-base);
+    }
+
+    .site-foot {
+        background-color: #15171A;
+    }
+}

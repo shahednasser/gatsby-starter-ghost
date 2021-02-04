@@ -165,6 +165,7 @@ module.exports = {
         `gatsby-plugin-offline`,
         'gatsby-plugin-sitemap',
         'gatsby-plugin-netlify-cache',
-        'gatsby-plugin-preload-fonts'
+        'gatsby-plugin-preload-fonts',
+        'gatsby-plugin-dark-mode'
     ],
 }
