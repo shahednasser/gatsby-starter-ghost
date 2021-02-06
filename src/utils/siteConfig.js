@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: `https://shahednasserblog.tk`, // Site domain. Do not include a trailing slash!
+    siteUrl: `https://blog.shahednasser.com`, // Site domain. Do not include a trailing slash!
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
