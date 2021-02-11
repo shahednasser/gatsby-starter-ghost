@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import Search from "./Search"
+const searchIndices = [{ name: `Pages`, title: `Pages` }]
 
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
@@ -66,6 +68,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <a className="site-nav-item" href="https://github.com/shahednasser" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/github.svg" alt="Github" /></a>
                                     <a className="site-nav-item" href="mailto:shahednasser@gmail.com" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/mail.svg" alt="Email" /></a>
                                     <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
+                                </div>
+                                <div className="site-mast-left">
+                                    <Search indices={searchIndices} />
                                 </div>
                             </div>
                             { isHome ?

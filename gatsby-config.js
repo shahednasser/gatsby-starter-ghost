@@ -159,6 +159,14 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: `gatsby-plugin-algolia`,
+            options: {
+                appId: process.env.algoliaAppId,
+                apiKey: process.env.algoliaAdminKey,
+                queries: require("./src/utils/algolia-queries")
+            },
+        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
@@ -166,6 +174,7 @@ module.exports = {
         'gatsby-plugin-sitemap',
         'gatsby-plugin-netlify-cache',
         'gatsby-plugin-preload-fonts',
-        'gatsby-plugin-dark-mode'
+        'gatsby-plugin-dark-mode',
+        `gatsby-plugin-styled-components`
     ],
 }
