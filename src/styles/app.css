@@ -2073,6 +2073,10 @@ h6 {
     li.ais-Hits-item h4 {
         color: var(--color-base) !important;
     }
+
+    .suggested-read {
+        color: var(--dm-bg-color);
+    }
 }
 
 /** define variables **/
@@ -2132,4 +2136,8 @@ h6 {
 
 [data-theme="dark"] li.ais-Hits-item h4 {
     color: var(--color-base) !important;
+}
+
+[data-theme="dark"] .suggested-read {
+    color: var(--dm-bg-color);
 }
