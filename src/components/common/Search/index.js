@@ -8,9 +8,13 @@ import StyledSearchRoot from "./styled-search-root"
 import useClickOutside from "./use-click-outside"
 
 const theme = {
-  foreground: "#050505",
-  background: "white",
-  faded: "#888",
+  foreground: "#fff",
+  background: "transparent",
+  faded: "#ddd",
+  searchResult: {
+    background: "#fff",
+    foreground: "#333"
+  }
 }
 
 export default function Search({ indices }) {

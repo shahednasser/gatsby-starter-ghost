@@ -2014,7 +2014,7 @@ h6 {
 /** END CARBON **/
 
 /** DARK MODE SUPPORT **/
-@media screen and (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: dark) {
     /** define variables **/
     :root {
         --dm-bg-color: #263238;
@@ -2059,6 +2059,19 @@ h6 {
     #carbonads .carbon-poweredby {
         background: #1e2021;
         color: #aaa;
+    }
+
+    [class*=styled-search-result] {
+        background-color: var(--code-bg);
+        color: var(--color-base);
+    }
+
+    li.ais-Hits-item:hover {
+        background-color: #939da4;
+    }
+
+    li.ais-Hits-item h4 {
+        color: var(--color-base) !important;
     }
 }
 
@@ -2106,4 +2119,17 @@ h6 {
 [data-theme="dark"] #carbonads .carbon-poweredby {
     background: #1e2021;
     color: #aaa;
+}
+
+[data-theme="dark"] [class*=styled-search-result] {
+    background-color: var(--code-bg);
+    color: var(--color-base);
+}
+
+[data-theme="dark"] li.ais-Hits-item:hover {
+    background-color: #939da4;
+}
+
+[data-theme="dark"] li.ais-Hits-item h4 {
+    color: var(--color-base) !important;
 }
