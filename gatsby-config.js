@@ -162,8 +162,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-algolia`,
             options: {
-                appId: process.env.algoliaAppId,
-                apiKey: process.env.algoliaAdminKey,
+                appId: `TLPNUEOOEZ`,
+                apiKey: `b27c675b30a9e5b3065112d62a7d6fa5`,
                 queries: require("./src/utils/algolia-queries")
             },
         },
